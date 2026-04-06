@@ -1,5 +1,5 @@
-$('.top-anim').each(function (i, element) {
+$('.left-anim').each(function (i, element) {
     setTimeout(function () {
         $(element).addClass('animated');
-    }, i * 50);
+    }, i * 100);
 });

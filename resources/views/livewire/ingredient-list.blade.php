@@ -1,13 +1,13 @@
 
 <div
-    class="ing-content top-anim">
+    class="ing-content">
 
-    <input type="text" wire:model.live="search" placeholder="Search ingredient..." class="form-control position-relative d-block ing-search m-auto mb-3 top-anim">
+    <input type="text" wire:model.live="search" placeholder="Search ingredient..." class="form-control position-relative d-block ing-search m-auto mb-3">
 
     @foreach($items as $index => $item)
         <a
             href="{{ url('Ingredient/' . $item['idIngredient']) }}"
-            class="position-relative d-inline-block align-top rounded ing-item m-2 overflow-hidden top-anim">
+            class="position-relative d-inline-block align-top rounded ing-item m-2 overflow-hidden">
             <div
                 class="ing-img position-absolute d-block"
                 style="background: url('{{ $item['strThumb'] }}') no-repeat center;"></div>
@@ -17,13 +17,13 @@
         </a>
     @endforeach
     @if(count($items) === 0)
-        <p class="ing-not-found text-center d-block position-relative p-2 top-anim">
+        <p class="ing-not-found text-center d-block position-relative p-2">
             No ingredients found.
         </p>
     @endif
 
     <div
-        class="position-relative d-block text-center mt-5 gap-1 top-anim">
+        class="position-relative d-block text-center mt-5 gap-1">
 
         @if ($page > 3)
             <button

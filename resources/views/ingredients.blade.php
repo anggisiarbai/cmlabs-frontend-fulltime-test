@@ -6,7 +6,7 @@
 
 @section('content')
     <h1
-        class="ing-title d-table position-relative mb-5 text-center top-anim">
+        class="ing-title d-table position-relative mb-5 text-center left-anim">
         <div
             class="bg">
         </div>
@@ -16,5 +16,7 @@
         </span>
         Food Ingredients
     </h1>
-    @livewire('ingredient-list')
+    <div class="position-relative d-block left-anim">
+        @livewire('ingredient-list')
+    </div>
 @endsection

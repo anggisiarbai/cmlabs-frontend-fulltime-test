@@ -22,12 +22,12 @@
         @yield('head-additional')
     </head>
     <body>
-        <div class="content">
+        <div class="content left-anim">
             @yield('content')
         </div>
 
         <footer
-            class="footer-container pt-3 pb-3 text-center d-block position-relative top-anim">
+            class="footer-container pt-3 pb-3 text-center d-block position-relative left-anim">
             &copy; {{ date('Y') }} {{ config('app.name', 'CMLabs') }}. Test project for CM Labs.
         </footer>
 
