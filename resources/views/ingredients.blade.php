@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('title')
-    Populare Food Ingredients
+    Popular Food Ingredients
 @endsection
 
 @section('content')

@@ -177,3 +177,56 @@ body {
     -ms-transition: opacity 0.8s, left 0.8s;
     transition: opacity 0.8s, left 0.8s;
 }
+
+.det-head {
+    font-size: 0px;
+    align-content: center;
+}
+
+.det-head > * {
+    font-size: 14px;
+    width: 50%;
+}
+
+.det-head > img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.det-title {
+    font-family: Oswald, sans-serif !important;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.det-title span {
+    font-size: 25px;
+    top: 5px;
+}
+
+.det-title .bg {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 40%;
+    background: #fabd02;
+    right: 0px;
+    top: 30%;
+    z-index: -1;
+}
+
+.det-desc {
+    max-width: 920px;
+}
+
+.det-desc:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #fabd02;
+    top: 0px;
+    left: calc((100% - 100px) / 2);
+}

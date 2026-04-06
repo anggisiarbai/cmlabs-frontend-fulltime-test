@@ -21,7 +21,7 @@
     @endforeach
     @if(count($items) === 0)
         <p class="ing-not-found text-center d-block position-relative p-2">
-            No ingredients found.
+            No meals found.
         </p>
     @endif
 
