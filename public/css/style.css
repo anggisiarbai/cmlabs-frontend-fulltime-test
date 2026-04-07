@@ -163,19 +163,36 @@ body {
     font-size: 20px;
 }
 
-.left-anim {
+.top-anim {
     opacity: 0;
-    left: 150px;
+    top: 150px;
 }
 
-.left-anim.animated {
+.top-anim.animated {
     opacity: 1;
-    left: 0;
+    top: 0;
 
-    -webkit-transition: opacity 0.8s, left 0.8s;
-    -moz-transition: opacity 0.8s, left 0.8s;
-    -ms-transition: opacity 0.8s, left 0.8s;
-    transition: opacity 0.8s, left 0.8s;
+    -webkit-transition: opacity 0.8s, top 0.8s;
+    -moz-transition: opacity 0.8s, top 0.8s;
+    -ms-transition: opacity 0.8s, top 0.8s;
+    transition: opacity 0.8s, top 0.8s;
+}
+
+.bre-container {
+    font-size: 14px;
+}
+
+.bre-link {
+    color: #000;
+}
+
+.bre-separator {
+    margin: 0px 5px;
+}
+
+.bre-current {
+    color: #fabd02;
+    font-weight: 500;
 }
 
 .det-head {
@@ -217,7 +234,9 @@ body {
 }
 
 .det-desc {
-    max-width: 920px;
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .det-desc:before {
@@ -229,4 +248,25 @@ body {
     background: #fabd02;
     top: 0px;
     left: calc((100% - 100px) / 2);
+}
+
+.det-content-title {
+    font-family: Oswald, sans-serif !important;
+    font-size: 25px;
+}
+
+.det-content-title span {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.det-content-title .bg {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 40%;
+    background: #fabd02;
+    left: -20px;
+    top: 30%;
+    z-index: -1;
 }

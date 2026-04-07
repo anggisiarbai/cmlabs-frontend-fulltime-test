@@ -22,7 +22,13 @@
         @yield('head-additional')
     </head>
     <body>
-        <div class="content left-anim">
+        <div
+            class="content left-anim">
+            <div
+                class="bre-container left-anim position-relative d-block mb-3">
+                @yield('breadcrumb')
+            </div>
+
             @yield('content')
         </div>
 
