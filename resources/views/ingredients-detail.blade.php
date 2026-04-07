@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('title')
-    Ingredient Details
+    {{ $ingredient['strIngredient'] }}
 @endsection
 
 @section('breadcrumb')
@@ -23,7 +23,8 @@
 @endsection
 
 @section('content')
-    <div class="det-head mb-5 position-relative d-block top-anim">
+    <div
+        class="det-head mb-5 position-relative d-block top-anim">
         <h1
             class="det-title align-middle position-relative d-inline-block mb-5 top-anim text-end pe-5">
             <div
@@ -40,13 +41,17 @@
         alt="{{ $ingredient['strIngredient'] }}"
         class="det-img position-relative d-inline-block align-middle top-anim ps-5">
     </div>
-    <div class="position-relative d-block top-anim">
-        <div class="det-desc d-block position-relative m-auto mb-5 pt-4 text-center top-anim">
+    <div
+        class="position-relative d-block top-anim">
+        <div
+            class="det-desc d-block position-relative m-auto mb-5 pt-4 text-center top-anim">
             {{ $ingredient['strDescription'] }}
         </div>
     </div>
-    <div class="position-relative d-block top-anim">
-        <h2 class="det-content-title text-center position-relative d-table m-auto mb-4">
+    <div
+        class="position-relative d-block top-anim">
+        <h2
+            class="det-content-title text-center position-relative d-table m-auto mb-4">
             <div
                 class="bg">
             </div>
